@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 80px;
+    background-color: #666;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: width 0.3s ease;
+}
+
+.sidebar.active {
+    width: 250px;
+}
+
+.sidebar .top {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar .user {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sidebar .user img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.sidebar ul li a .nav-item {
+    display: none;
+}
+
+.sidebar.active ul li a .nav-item {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.sidebar.active ul li {
+    text-align: left;
+}
+
+.tooltip {
+    display: none;
+}
+
+/* Main content - Centered header */
+.main-content {
+    margin-left: 80px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar.active ~ .main-content {
+    margin-left: 250px;
+}
+
+.intro-text {
+    text-align: center;
+}
+
+.intro-text h1 {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.intro-text .highlight {
+    color: yellow;
+    font-size: 1.5em;
+}
+
+.intro-text .profession {
+    color: red;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.intro-text hr {
+    width: 50%;
+    margin: 10px auto;
+    border: 0;
+    border-top: 2px solid white;
+}

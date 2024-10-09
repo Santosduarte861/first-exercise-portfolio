@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Duarte Santos Portfolio</title>
+<link href="./style.css" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+<body>
+    <div class="sidebar">
+        <div class="top">
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <div class="user">
+            <img src="images/icon image.jpeg" alt="User Icon">
+            <div>
+                <p class="bold">Duarte.S</p>
+                <p>Designer</p>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <a href="#about-me">
+                    <i class='bx bx-user-circle'></i>
+                    <span class="nav-item">About me</span>
+                </a>
+                <span class="tooltip">About me</span>
+            </li>
+            <li>
+                <a href="#projects">
+                    <i class='bx bxs-megaphone'></i>
+                    <span class="nav-item">Projects</span>
+                </a>
+                <span class="tooltip">Projects</span>
+            </li>
+            <li>
+                <a href="#contacts">
+                    <i class='bx bxs-conversation'></i>
+                    <span class="nav-item">Contacts</span>
+                </a>
+                <span class="tooltip">Contacts</span>
+            </li>
+        </ul>
+    </div>
+
+ 
+    <div class="main-content">
+        <div class="intro-text">
+            <p class="highlight">My name is</p>
+            <h1>Duarte Santos</h1>
+            <hr>
+            <p class="profession">I'm a designer</p>
+        </div>
+    </div>
+
+    <script>
+        let btn = document.querySelector('#btn');
+        let sidebar = document.querySelector('.sidebar');
+
+        btn.onclick = function() {
+            sidebar.classList.toggle('active');
+        };
+    </script>
+</body>
+</html>
