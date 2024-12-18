@@ -4,7 +4,10 @@
 <title>Duarte Santos Portfolio</title>
 <link href="./style.css" rel="stylesheet">
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="description" content="Portfolio of Duarte Santos, a designer.">
+</head>
 
 <body>
     <div class="sidebar">
@@ -12,7 +15,7 @@
             <i class="bx bx-menu" id="btn"></i>
         </div>
         <div class="user">
-            <img src="images/icon image.jpeg" alt="User Icon">
+            <img src="images/stuttgard student photo.jpg" alt="User Icon">
             <div>
                 <p class="bold">Duarte.S</p>
                 <p>Designer</p>
@@ -20,7 +23,7 @@
         </div>
         <ul>
             <li>
-                <a href="#about-me">
+                <a href="#resume-section">
                     <i class='bx bx-user-circle'></i>
                     <span class="nav-item">About me</span>
                 </a>
@@ -43,7 +46,6 @@
         </ul>
     </div>
 
- 
     <div class="main-content">
         <div class="intro-text">
             <p class="highlight">My name is</p>
@@ -52,6 +54,100 @@
             <p class="profession">I'm a designer</p>
         </div>
     </div>
+
+    <section class="resume-section" id="resume-section">
+        <div class="resume-left">
+            <h1>About Me</h1>
+            <p>
+               What happens when a kid gets too much sugar? <ul>ME!</ul> 
+            </p>
+
+            <p>
+                Hi, my name is Duarte and I am currently trying to survive university.
+                My knowledge goes from charcoal drawings or art, to digital design, in which I meddle in different design aplications such as
+                Photoshop, Illustrator, Lightroom, Premiere, a bit of blender and a pinch of coding in Visual Studio and Visual Studio Code.
+                Ahead will be presented some works done by me and the help of other colleagues, please enjoy!!
+            </p>
+        </div>
+        <div class="resume-right">
+           <img src="images/stuttgard student photo.jpg" alt="meimage">
+        </div>
+    </section>
+
+    <section class="container" id="projects">
+        <h1 class="projects-title">My Projects</h1>
+        <h2 class="what-project">Vogue magazine project</h2>
+        <h3 class="vouge-description">This project was done for the company Vougue, where they challenged us to create
+            a brand of shower gel aswell the bottle itself.
+            The challenge was therefore create a shower gel, establish what logo that company would have, the shape of the 
+            container, plus the packaging in which the same woyld be transported.
+            <a href="vougue_chalange.html">See more</a>
+        </h3>
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img id="slide-1" src="images/mockup gel frame.jpeg">
+                <img id="slide-2" src="images/bottle black back mock up.png">
+                <img id="slide-3" src="images/mockup gel.png">
+                <img id="slide-4" src="images/blank-billboard-mockup.png">
+                <img id="slide-5" src="images/Vogue poster black.png">
+            </div>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+                <a href="#slide-4"></a>
+                <a href="#slide-5"></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="kairos" id="projects">
+        <h2 class="what-project">Logotype and troley made for a client</h2>
+        <h3 class="kairos-description">This was a project done for a client, which we had to 
+            build a trolley to help him carry is basic materials to do his job and also 
+            create him a brand that could be used in his workplace and online to gather more 
+            costumers.
+            We also had to build a small scale model of the trolley to present it to the client
+        </h3>
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img id="slide-6" src="images/contextualized rendering 2.jpg">
+                <img id="slide-7" src="images/view 2.jpg">
+                <img id="slide-8" src="images/close up.jpg">
+                <img id="slide-9" src="images/desenho tecnico final.jpg">
+                <img id="slide-10" src="images/kairos logo painel.png">
+                <img id="slide-11" src="images/kairos mockup watch.jpeg">
+                <img id="slide-12" src="images/Screenshot 2023-10-23 194655.png">
+                <img id="slide-13" src="images/tshirt kairos second logo .jpeg">
+            </div>
+            <div class="slider-nav">
+                <a href="#slide-6"></a>
+                <a href="#slide-7"></a>
+                <a href="#slide-8"></a>
+                <a href="#slide-9"></a> 
+                <a href="#slide-10"></a>
+                <a href="#slide-11"></a>
+                <a href="#slide-12"></a>
+                <a href="#slide-13"></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="contacts">
+        <div class="footer-container">
+            <p>Connect with me on social media:</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/dmg_santos" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://twitter.com/dmgsantos2004" target="_blank"><i class='bx bxl-twitter'></i></a>
+            </div>
+            <p>&copy; 2024 Duarte Santos. All rights reserved.</p>
+        </div>
+    </footer>
+
+  
+
+   
+
 
     <script>
         let btn = document.querySelector('#btn');
